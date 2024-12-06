@@ -23,33 +23,221 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div>
-      <header>
-        <div class="site-name">
-          <a href="index.html">
-            <img src="images/logo.png" alt="Local Restaurant Logo" />
-          </a>
-        </div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <nav class="nav-bar">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+    <!-- <div> -->
+    <header>
+      <div class="site-name">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Local Restaurant Logo" />
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- </div> -->
     <main>
+      <!-- Hero Section -->
       <section class="hero">
-        <h2>Welcome to Local Restaurant</h2>
-        <p>Experience the best culinary delights.</p>
+        <div class="hero-content">
+          <h1>Welcome to Local Restaurant</h1>
+          <p>
+            Discover our exceptional menu crafted with the finest ingredients
+            and experience an atmosphere that feels like home.
+          </p>
+          <a href="menu.html" class="cta-btn">Explore Our Menu</a>
+        </div>
+      </section>
+
+      <!-- Menu Section -->
+      <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+          <!-- Dish 1 -->
+          <div class="menu-card">
+            <img src="images/dish1.jpg" alt="Margherita Pizza" />
+            <h3>Margherita Pizza</h3>
+            <p>
+              A classic Italian pizza with fresh basil, mozzarella, and
+              tomatoes.
+            </p>
+            <p class="price">Price: $12.99</p>
+          </div>
+          <!-- Dish 2 -->
+          <div class="menu-card">
+            <img src="images/dish2.jpg" alt="Cheeseburger" />
+            <h3>Cheeseburger</h3>
+            <p>Juicy grilled beef patty topped with melted cheddar cheese.</p>
+            <p class="price">Price: $10.99</p>
+          </div>
+          <!-- Dish 3 -->
+          <div class="menu-card">
+            <img src="images/dish3.jpg" alt="Caesar Salad" />
+            <h3>Caesar Salad</h3>
+            <p>
+              Crisp romaine lettuce tossed in Caesar dressing with parmesan.
+            </p>
+            <p class="price">Price: $8.99</p>
+          </div>
+          <!-- Dish 4 -->
+          <div class="menu-card">
+            <img src="images/dish4.jpg" alt="Grilled Salmon" />
+            <h3>Grilled Salmon</h3>
+            <p>
+              Perfectly grilled salmon fillet served with lemon butter sauce.
+            </p>
+            <p class="price">Price: $15.99</p>
+          </div>
+          <!-- Dish 5 -->
+          <div class="menu-card">
+            <img src="images/dish5.jpg" alt="Pasta Primavera" />
+            <h3>Pasta Primavera</h3>
+            <p>
+              Fresh vegetables tossed with pasta in a light garlic olive oil
+              sauce.
+            </p>
+            <p class="price">Price: $13.49</p>
+          </div>
+          <!-- Dish 6 -->
+          <div class="menu-card">
+            <img src="images/dish6.jpg" alt="Tiramisu" />
+            <h3>Tiramisu</h3>
+            <p>
+              A traditional Italian dessert layered with mascarpone and
+              espresso.
+            </p>
+            <p class="price">Price: $6.99</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+          <!-- Dine-In Service -->
+          <div class="service">
+            <img src="images/dine-in.png" alt="Dine-In Service" />
+            <h3>Dine-In</h3>
+            <p>
+              Enjoy a warm, inviting ambiance perfect for casual meals or
+              special occasions.
+            </p>
+          </div>
+
+          <!-- Takeaway Service -->
+          <div class="service">
+            <img src="images/takeaway.png" alt="Takeaway Service" />
+            <h3>Takeaway</h3>
+            <p>
+              Quick and easy options to enjoy your favorite meals at home or on
+              the go.
+            </p>
+          </div>
+
+          <!-- Catering Service -->
+          <div class="service">
+            <img src="images/catering.png" alt="Catering Service" />
+            <h3>Catering</h3>
+            <p>
+              Let us make your events unforgettable with our tailored catering
+              services.
+            </p>
+          </div>
+
+          <!-- Online Reservations -->
+          <div class="service">
+            <img
+              src="images/online-reservations.png"
+              alt="Online Reservations"
+            />
+            <h3>Online Reservations</h3>
+            <p>
+              Book your table in advance with our seamless online reservation
+              system.
+            </p>
+          </div>
+
+          <!-- Food Delivery -->
+          <div class="service">
+            <img src="images/food-delivery.png" alt="Food Delivery" />
+            <h3>Food Delivery</h3>
+            <p>
+              Enjoy your favorite dishes delivered straight to your doorstep
+              with our reliable delivery service.
+            </p>
+          </div>
+
+          <!-- Event Hosting -->
+          <div class="service">
+            <img src="images/event-hosting.png" alt="Event Hosting" />
+            <h3>Event Hosting</h3>
+            <p>
+              Host your celebrations and special occasions at our venue for an
+              unforgettable experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about">
+        <h2>About Us</h2>
+        <div class="about-container">
+          <img src="images/about-us.png" alt="About Local Restaurant" />
+          <div class="about-text">
+            <p>
+              At Local Restaurant, we are passionate about creating memorable
+              dining experiences. Since our inception in 2010, we’ve been
+              dedicated to serving delicious meals made with the finest
+              ingredients.
+            </p>
+            <p>
+              Our mission is to provide a welcoming space for families and
+              friends to gather and enjoy food that nourishes both the body and
+              the soul.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-container">
+          <blockquote>
+            "The food here is absolutely amazing! Everything was fresh and
+            delicious. Highly recommend the pasta and desserts!" – Sarah M.
+          </blockquote>
+          <blockquote>
+            "A cozy place with friendly staff and top-notch service. The
+            ambiance is perfect for family dinners." – John K.
+          </blockquote>
+          <blockquote>
+            "The best restaurant in town! I’m always impressed by their seasonal
+            specials." – Emma L.
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-preview">
+        <h2>Visit Us Today!</h2>
+        <p>
+          We’re located in the heart of the city. Drop by for a meal or get in
+          touch with us for reservations and inquiries.
+        </p>
+        <a href="contact.html" class="cta-btn">Contact Us</a>
       </section>
     </main>
 
