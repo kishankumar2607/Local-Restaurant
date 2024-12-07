@@ -10,7 +10,7 @@ body {
   color: #000000;
   font-size: 16px;
   line-height: 1.25;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 /* container style */
@@ -179,10 +179,27 @@ main {
   color: #ffffff;
 }
 
+footer{
+  background-color: #ffffff;
+}
+
 /* Menu Section */
 .menu {
   padding: 4rem 5rem;
   background: #000000;
+}
+
+.menu-section {
+  padding: 4rem 5rem;
+  background: #000000;
+}
+
+
+.menu h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
@@ -191,6 +208,13 @@ h2 {
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 3rem;
+}
+
+.menu p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 4rem;
 }
 
 .menu-container {
@@ -243,6 +267,8 @@ h2 {
   color: #ff0000 !important;
   padding: 0.5rem 1.5rem 1rem 1.5rem !important;
 }
+
+
 
 /* Services Section */
 .services {  
@@ -305,7 +331,7 @@ h2 {
 /* About Section */
 .about {
   padding: 50px 20px;
-  background: #f8f8f8;
+  background: #000000;
   text-align: center;
 }
 
@@ -327,6 +353,162 @@ h2 {
   font-size: 1.2rem;
   line-height: 1.8;
 }
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #000000;
+    color: #ffffff;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+}
+
+.hero-section h2 {
+  font-size: 2rem;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+.hero-section h3 {
+  font-size: 1.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.hero-section .subtext {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #aaa;
+}
+
+/* Image Slider Styles */
+.image-slider {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.slides img {
+  width: 310px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Hidden content */
+.hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.visible {
+  display: block;
+  opacity: 1;
+}
+
+/* Button for expansion */
+.about-us .btn {
+  cursor: pointer;
+  background: #ffffff;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-us .btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+
+/* About Us Section */
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background: #000000;
+  margin: 2rem 10rem 2rem;
+  padding: 1.5rem 1.5rem 1.5rem;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-us:hover {
+  transform: translateY(-10px);
+}
+
+.about-us::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.about-us:hover::after {
+  opacity: 1;
+  box-shadow: 0 5px 25px rgba(255, 255, 255, 0.1);
+}
+
+.about-us .content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-us h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.about-us p {
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.about-us .btn {
+    background: #ffffff;
+    color: #000;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.about-us .image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+
 
 /* Testimonials Section */
 .testimonials {
@@ -417,6 +599,48 @@ h2 {
     height: 100%;
     object-fit: cover;
   }
+
+  .menu-section {
+    padding: 2rem 3rem;
+    background: #000000;
+  }
+  
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 2rem;
+    padding: 1rem;
+  }
+
+  .about-us .content {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-us .image img {
+    width: 600px;
+  }
+
+  .hero-section h1, .hero-section h2, .hero-section h3 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section h3 {
+    font-size: 1.2rem;
+  }
+  .about-us .btn {
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+}
+
+  .slides img {
+    width: 200px;
+    height: 160px;
+  }
 }
 
 /* For screens from 768px */
@@ -430,6 +654,32 @@ h2 {
 
   .menu-card {
     width: 90%;
+  }
+  .about-us {
+    gap: 1.5rem;
+  }
+
+  .about-us .image img {
+    width: 500px;
+  }
+
+  .image-slider {
+    display: none;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .hero-section h1, .hero-section h2, .about-us h2 {
+    font-size: 1.5rem;
+  }
+  .hero-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero-section p, .about-us p{
+    font-size: 1rem;
   }
 }
 
@@ -449,7 +699,35 @@ h2 {
   .menu-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }  
+  }
+  
+  .about-us {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .about-us .content {
+    padding: 0 1rem;
+  }
+
+  
+  .hero-section h1, .hero-section h2, .about-us h2  {
+    font-size: 1.3rem;
+  }
+  .hero-section h3 {
+    font-size: 1.1rem;
+  }
+  .hero-section p, .about-us p {
+    font-size: 0.8rem;
+  }
+  .about-us .btn {
+    padding: 0.5rem 0.85rem;
+    border-radius: 3px;
+}
+  .about-us .image img {
+    width: 100%;
+    max-width: 350px;
+  }
 }
 
 /* For screens from 480px */
@@ -462,6 +740,10 @@ h2 {
     font-size: 22px;
   }
 
+  .menu h1 {
+    font-size: 2rem;
+  }
+
   .site-name a img {
     height: auto;
     width: 60px;
@@ -470,4 +752,35 @@ h2 {
   .nav-bar li {
     padding-left: 1rem;
   }
+  .about-us {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+
+  .about-us .content {
+    font-size: 0.9rem;
+  }
+
+  .about-us .image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-section h1, .hero-section h2, .hero-section h3, .about-us h2 {
+    font-size: 1rem;
+  }
+
+  .hero-section p, .about-us p {
+    font-size: 0.7rem;
+  }
+
+  .about-us .btn {
+    padding: 0.4rem 0.75rem;
+    border-radius: 2px;
+}
+
 }
