@@ -23,76 +23,67 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="about-us-content">
-    <div>
-      <header>
-        <div class="site-name">
-          <a href="index.html">
-            <img src="images/logo.png" alt="Local Restaurant Logo" />
-          </a>
-        </div>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <nav class="nav-bar">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About Us</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+    <header>
+      <div class="site-name">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Local Restaurant Logo" />
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <div class="about-us-content">
-      <section class="hero-section">
-        <h3>The Recipe of Our Success</h3>
-        <h2>
-          A distinctive, well-balanced, and comfortable space,<br />
-          fusion cuisine, food and drinks are done flawlessly.
-        </h2>
-        <p class="subtext">— The Best Place To Be —</p>
-      </section>
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <h1>The Recipe of Our Success</h1>
+          <h4>
+            A distinctive, well-balanced, and comfortable space,<br />
+            fusion cuisine, food and drinks are done flawlessly.
+          </h4>
+          <p class="subtext">— The Best Place To Be —</p>
+        </section>
 
-      <section class="image-slider">
-        <div class="slider-container">
-          <div class="slides">
-            <img src="images/dish1.jpg" alt="Dish 1" />
-            <img src="images/dish2.jpg" alt="Dish 2" />
-            <img src="images/dish3.jpg" alt="Dish 3" />
-            <img src="images/dish4.jpg" alt="Dish 4" />
-            <img src="images/dish5.jpg" alt="Dish 5" />
-            <img src="images/dish6.jpg" alt="Dish 6" />
-            <img src="images/dish7.jpg" alt="Dish 7" />
-            <img src="images/dish8.jpg" alt="Dish 8" />
-            <img src="images/dish9.jpg" alt="Dish 9" />
+        <!-- Image Slider -->
+        <section class="image-slider">
+          <div class="slider-container">
+            <div class="slides">
+              <img src="images/dish1.jpg" alt="Dish 1" />
+              <img src="images/dish2.jpg" alt="Dish 2" />
+              <img src="images/dish3.jpg" alt="Dish 3" />
+              <img src="images/dish4.jpg" alt="Dish 4" />
+              <img src="images/dish5.jpg" alt="Dish 5" />
+              <img src="images/dish6.jpg" alt="Dish 6" />
+              <img src="images/dish7.jpg" alt="Dish 7" />
+              <img src="images/dish8.jpg" alt="Dish 8" />
+              <img src="images/dish9.jpg" alt="Dish 9" />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- About Us Section -->
-      <section class="about-us">
-        <div class="content">
-          <h2>About Us</h2>
-          <p>
-            Local Restaurant, the ultimate destination for a unique dining and
-            entertainment experience, now has five locations in Cambridge,
-            Kitchener, and Windsor, Ontario. We aim to introduce a
-            groundbreaking concept that fuses Asian flavors, the bar atmosphere,
-            and the vibrant energy of a relaxed club, all under one roof.
-          </p>
-          <div id="extra-content" class="hidden">
+        <!-- About Us Section -->
+        <section class="about-us">
+          <div class="content">
+            <h2>About Us</h2>
             <p>
-              Our journey began with a passion for bringing people together
-              through food, music, and unforgettable ambiance. We take pride in
-              serving a menu inspired by the diverse and rich culinary
-              traditions of Asia, prepared with a modern twist to delight your
-              taste buds. From the fresh sushi platters to sizzling stir-fries,
-              every dish is crafted with the finest ingredients and utmost care.
+              Local Restaurant, the ultimate destination for a unique dining and
+              entertainment experience, now has five locations in Cambridge,
+              Kitchener, and Windsor, Ontario. We aim to introduce a
+              groundbreaking concept that fuses Asian flavors, the bar
+              atmosphere, and the vibrant energy of a relaxed club, all under
+              one roof.
             </p>
             <p>
               At Local Restaurant, we believe dining is more than just eating,
@@ -102,31 +93,101 @@
               welcome.
             </p>
           </div>
-          <button class="btn" id="discover-more">Discover More</button>
-        </div>
-        <div class="image">
-          <img src="images/restaurant.jpg" alt="Restaurant" />
-        </div>
-      </section>
+          <div class="image">
+            <img src="images/restaurant.jpg" alt="Restaurant" />
+          </div>
+        </section>
 
-      <!-- Unique Experience Section -->
-      <section class="about-us">
-        <div class="content">
-          <h2>Unique Experience</h2>
+        <!-- Our Values Section -->
+        <section class="values-section">
+          <h2>Our Values</h2>
+          <div class="values-container">
+            <div class="value-card">
+              <h3>Quality</h3>
+              <p>
+                We are committed to using the finest ingredients and preparing
+                dishes with care to ensure every bite exceeds expectations.
+              </p>
+            </div>
+            <div class="value-card">
+              <h3>Community</h3>
+              <p>
+                We cherish our role in the community and aim to create a space
+                that brings people together through food and camaraderie.
+              </p>
+            </div>
+            <div class="value-card">
+              <h3>Innovation</h3>
+              <p>
+                Constantly evolving our menu and services to offer fresh and
+                exciting experiences to our guests.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+          <h2>Our Journey</h2>
+          <div class="timeline-container">
+            <div class="timeline-item">
+              <h3>2010</h3>
+              <p>Opened our first location in Cambridge, Ontario.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>2015</h3>
+              <p>Expanded to Kitchener with a second location.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>2020</h3>
+              <p>Launched our innovative fusion menu concept.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>2023</h3>
+              <p>Celebrated opening our fifth location in Windsor.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Meet Our Team Section -->
+        <section class="team-section">
+          <h2>Meet Our Team</h2>
+          <div class="team-container">
+            <div class="team-card">
+              <img src="images/chef1.jpg" alt="Head Chef" />
+              <div class="team-card-inner-div">
+                <h3>John Doe</h3>
+                <p>Head Chef</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="images/manager.jpg" alt="Manager" />
+              <div class="team-card-inner-div">
+                <h3>Linda Smith</h3>
+                <p>Restaurant Manager</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img src="images/chef2.jpg" alt="Sous Chef" />
+              <div class="team-card-inner-div">
+                <h3>Alex Lee</h3>
+                <p>Sous Chef</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="call-to-action">
+          <h2>Experience the Best Dining</h2>
           <p>
-            Our menu is a delightful fusion of Asian flavors and influences,
-            carefully curated by our skilled chefs. From affordable snacks to
-            elaborate meals, we promise an unforgettable culinary journey that
-            will tantalize your taste buds. Whether you’re joining us for lunch,
-            dinner, or a quick snack, you’ll discover a diverse range of options
-            to satisfy your cravings.
+            Join us today for an unforgettable experience where culinary
+            excellence meets exceptional service. Indulge in our fusion of
+            flavors and create cherished memories with friends and family.
           </p>
-        </div>
-        <div class="image">
-          <img src="images/dish3.jpg" alt="Dish 3" />
-        </div>
-      </section>
-    </div>
+          <a href="menu.html" class="button">Explore Our Menu</a>
+        </section>
+      </div>
     </main>
 
     <footer>
